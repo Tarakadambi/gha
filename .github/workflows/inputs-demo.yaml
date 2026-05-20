@@ -10,7 +10,7 @@ on:
           - dev
           - test
           - prod
-       tag:
+      artifact_tag:
          description: choose the git tag to deploy
          required : true
 jobs:
