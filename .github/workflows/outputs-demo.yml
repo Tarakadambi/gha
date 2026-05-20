@@ -1,7 +1,7 @@
 name: outputs Demo
 on: push
 jobs:
-  build:
+   build:
     outputs:
       version: ${{steps.step1.outputs.version }}
     runs-on: ubuntu-latest
