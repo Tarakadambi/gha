@@ -1,4 +1,4 @@
-name: If Demo
+name: or condition demo
 on: push 
 jobs:
   demo:
