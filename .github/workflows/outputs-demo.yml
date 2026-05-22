@@ -8,10 +8,10 @@ jobs:
     steps:
       - name: build step
         id: step1
-       run:echo "version=0.0.1" >> $GITHUB_OUTPUT
- deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-     - name: Deploy the App
-       run: echo "We are deploying the app with version ${{needs.build.outputs.version}}"
+        run: echo "version=0.0.1" >> $GITHUB_OUTPUT
+  deploy:
+     needs: build
+     runs-on: ubuntu-latest
+     steps:
+      - name: Deploy the App
+        run: echo "We are deploying the app with version ${{needs.build.outputs.version}}"
