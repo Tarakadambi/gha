@@ -1,0 +1,9 @@
+name: If Demo
+on: push 
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run for Tara or Tarakadambi
+        if: github.actor == 'tara' || github.actor == 'TaraKadambi'
+        run: echo "it is triggered by either Tara or Tarakadambi"
