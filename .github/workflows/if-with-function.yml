@@ -6,7 +6,7 @@ on:
        - develop
        - feature/**
 jobs:
-    quality_check:
+   quality_check:
         if: StartsWith(github.ref_name,'feature') && github.event_name == 'push'    
         runs-on: ubuntu-latest
         steps:
