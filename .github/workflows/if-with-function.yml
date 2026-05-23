@@ -28,5 +28,5 @@ jobs:
         needs: [quality_check, dev_deploy, prod_deploy]
         runs-on: ubuntu-latest
         steps:
-            - name: notify
+            - name: notify success
               run: echo "success notify email sent to the team"
